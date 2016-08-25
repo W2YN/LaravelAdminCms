@@ -153,7 +153,6 @@ return [
         Collective\Html\HtmlServiceProvider::class,
         Zizaco\Entrust\EntrustServiceProvider::class,
         Orangehill\Iseed\IseedServiceProvider::class,
-        zgldh\workerboy\WorkerBoyServiceProvider::class,
     ],
 
     /*
