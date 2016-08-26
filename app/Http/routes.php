@@ -1,7 +1,7 @@
 <?php
-Route::get('cors', function () {
-    return view('testCors');
-});
+//Route::get('cors', function () {
+//    return view('testCors');
+//});
 
 Route::get('/', function () {
     return redirect('backend/index/');
