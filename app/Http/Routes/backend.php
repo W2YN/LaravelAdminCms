@@ -1,7 +1,7 @@
 <?php
 /* 后台首页 */
-Route::get('index/', [
-    'as'   => 'backend.index.index',
+Route::get('/', [
+    'as'   => 'backend.index',
     'uses' => 'IndexController@index',
 ]);
 

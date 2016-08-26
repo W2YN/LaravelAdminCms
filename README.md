@@ -1,1 +1,59 @@
-# laravelbidingtou
+## laravelbidingtou
+--------
+
+### 功能特点
+
+- 简单易用（Simple and easy to use）
+- 日志管理（Log Manager）
+- 用户验证（Auth Manager）
+- 用户管理（User Manager）
+- 菜单管理（Menu Manager）
+- 操作管理（Action Manager）
+- 中英文切换（Switch in Chinese and English）
+- 角色与权限管理（Roles & Permissions Manager）
+- 模型视图分层，代码解耦（Repository && Presenters && Services）
+
+### 环境要求
+
+- PHP : 5.6
+- Laravel : 5.1.*
+- Composer
+
+### 安装步骤（Installation）
+
+1. git clone https://github.com/ucfyao/laravelbidingtou.git
+2. cd laravelbidingtou
+3. sudo chmod -R 777 storage/
+4. sudo composer install
+5. sudo npm install
+6. sudo vi .env
+7. gulp
+8. php artisan migrate:refresh --seed
+9. php artisan serve
+10. gulp watch
+
+### 更新步骤（Update）
+
+1. git pull
+2. composer update
+
+### 线上优化（ProductionOptimize）
+
+    ```
+    php artisan optimize            优化
+    php artisan config:cache        配置缓存
+    php artisan route:cache         路由缓存
+    
+    php artisan clear-compiled      删除
+    php artisan config:clear
+    php artisan route:clear
+    php artisan view:clear
+
+
+### 关于（About）
+
+后台问题请联系:
+
+    ```
+    🐧:906961433
+    欢迎博客互访:www.yaozihao.cn
