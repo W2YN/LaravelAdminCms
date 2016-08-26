@@ -37,6 +37,60 @@
 1. git pull
 2. composer update
 
+
+### 线上部署（ProductionRelease）
+
+1.停掉服务
+
+    ```
+    php artisan down
+    
+2.从github拉代码
+
+    ```
+    git pull
+    
+3.编译前端文件
+    
+    ```
+    gulp --production
+    
+4.清理一下
+    
+    ```
+    php artisan clear-compiled
+    php artisan optimize
+    
+5.上线
+
+    ```
+    php artisan up
+
+全新的项目不用停掉再开启。
+
+1.拉代码
+    
+    ```
+    git clone foo.git
+
+2.安装依赖
+
+    ```
+    composer install --optimize-autoloader --no-dev
+    composer dump-autoload --optimize
+
+3.编译前端文件
+
+    ```
+    gulp --production
+
+4.清理
+
+    ```
+    php artisan clear-compiled
+    php artisan optimize
+
+
 ### 线上优化（ProductionOptimize）
 
     ```
