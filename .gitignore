@@ -4,6 +4,5 @@ Homestead.yaml
 Homestead.json
 .gitattributes
 .idea
-/storage
 /.env
 _ide_helper.php
